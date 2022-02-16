@@ -1,18 +1,38 @@
+.top-heading{
+    color: rgba(18, 230, 99, 0.835);
+    font-size: 60px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow:  10px 10px 5px #aaaaaa;
+}
 .heading-img{
     width:5%;
 }
-.disply{
+.top-img img{
+    height:885px;
+} 
+.disply,.saveDisply{
     width:350px;
     margin: auto;
+    margin-top:10px ;
     margin-bottom:10px;
     padding: 7px;
     border-radius: 15px;
     font-size: 30px;
+    color: rgb(68, 54, 54);
 
 }
 .disply:first-child{
     background-color: rgb(255, 253, 127);
 }
 .disply:last-child{
+    background-color: aquamarine;
+}
+
+.saveDisply:first-child{
+    background-color: rgb(91, 230, 223);
+}
+.saveDisply:last-child{
+    padding: 5px;
     background-color: aquamarine;
 }

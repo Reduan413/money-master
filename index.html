@@ -25,21 +25,21 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>
+    <div class="container mb-5">
+      <h1 class="text-center m-4 top-heading">
         Monthly account
         <img src="images/money-bag.svg" class="heading-img" alt="" />
       </h1>
       <div class="row">
-        <div class="col-6">
+        <div class="col-6 top-img">
           <img src="images/Finance.jpg" class="img-fluid" alt="" />
         </div>
         <div class="col-6 border align-items-center">
           <div class="w-75 mx-auto">
-            <h1 class="text-center">Income</h1>
+            <h1 class="text-center fw-bold">Income</h1>
             <div class="mb-3 row">
-              <label for="inputPassword" class="col-sm-2 col-form-label"
-                >Income</label
+              <label for="inputPassword" class="col-sm-2 col-form-label fs-5"
+                >Income: </label
               >
               <div class="col-sm-10">
                 <input type="text" class="form-control" id="inputPassword" />
@@ -48,8 +48,8 @@
             </div>
             <h1 class="text-center">Expenses</h1>
             <div class="mb-3 row">
-              <label for="inputFood" class="col-sm-2 col-form-label"
-                >Food</label
+              <label for="inputFood" class="col-sm-2 col-form-label fs-5"
+                >Food:</label
               >
               <div class="col-sm-10">
                 <input type="text" class="form-control" id="inputFood" />
@@ -57,8 +57,8 @@
               </div>
             </div>
             <div class="mb-3 row">
-              <label for="inputRent" class="col-sm-2 col-form-label"
-                >Rent</label
+              <label for="inputRent" class="col-sm-2 col-form-label fs-5"
+                >Rent:</label
               >
               <div class="col-sm-10">
                 <input type="text" class="form-control" id="inputRent" />
@@ -66,8 +66,8 @@
               </div>
             </div>
             <div class="mb-3 row">
-              <label for="inputClothes" class="col-sm-2 col-form-label"
-                >Clothes</label
+              <label for="inputClothes" class="col-sm-2 col-form-label fs-5"
+                >Clothes:</label
               >
               <div class="col-sm-10">
                 <input type="text" class="form-control" id="inputClothes" />
@@ -77,9 +77,34 @@
             <div class="d-grid gap-2 col-6 mx-auto">
               <button class="btn btn-primary btn-lg">Calculate</button>
             </div>
-            <div class=" mt-2  text-center">
+            <div class="mt-4 text-center">
               <h2 class="disply">Total Expenses: <span>5500</span></h2>
               <h2 class="disply">Balance: <span>5500</span></h2>
+            </div>
+
+            <div class="save mt-5">
+              <div class="mb-3 d-flex">
+                <div class="row">
+                  <label for="inputClothes" class="col-sm-2 col-form-label fs-5"
+                    >Save: </label
+                  >
+                  <div class="col-10">
+                    <input type="text" class="form-control" id="inputClothes" />
+                  </div>
+                </div>
+                <h5 class="mx-4">%</h5>
+                <div class="ml-3">
+                  <button class="btn btn-primary btn-lg">Save</button>
+                </div>
+              </div>
+              <div class="invalid-feedbac">
+                Please provide a valid city.
+              </div>
+
+              <div class="  text-center">
+                <h2 class="saveDisply">Save Amount: <span>5500</span></h2>
+                <h2 class="saveDisply">Remaining Balance: <span>5500</span></h2>
+              </div>
             </div>
           </div>
         </div>
