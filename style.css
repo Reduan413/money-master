@@ -50,7 +50,10 @@
     .top-heading{
         font-size:30px;
     }
+    .top-img img{
+        height:300px;
+    } 
     .savestyle{
-        margin-top:50px;
+        margin-top:50px !important;
     }
 }
