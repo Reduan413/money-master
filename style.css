@@ -9,7 +9,7 @@
     width:5%;
 }
 .top-img img{
-    height:885px;
+    height:800px;
 } 
 .disply,.saveDisply{
     width:350px;
@@ -35,4 +35,18 @@
 .saveDisply:last-child{
     padding: 5px;
     background-color: aquamarine;
+}
+.feedback{
+    display: none;
+}
+
+/*Media Queries*/
+/*Mobile Device*/
+@media only screen and (max-width:688px){
+    .top-heading{
+        font-size:30px;
+    }
+    .savestyle{
+        margin-top:50px;
+    }
 }

@@ -31,19 +31,19 @@
         <img src="images/money-bag.svg" class="heading-img" alt="" />
       </h1>
       <div class="row">
-        <div class="col-6 top-img">
+        <div class="col-12 col-sm-6 top-img">
           <img src="images/Finance.jpg" class="img-fluid" alt="" />
         </div>
-        <div class="col-6 border align-items-center">
+        <div class="col-12 col-sm-6 border align-items-center">
           <div class="w-75 mx-auto">
             <h1 class="text-center fw-bold">Income</h1>
             <div class="mb-3 row">
-              <label for="inputPassword" class="col-sm-2 col-form-label fs-5"
+              <label for="inputIncome" class="col-sm-2 col-form-label fs-5"
                 >Income: </label
               >
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="inputPassword" />
-                <div class="invalid-feedbac">Please provide a valid city.</div>
+                <input type="text" class="form-control" id="inputIncome" />
+                <div class="feedback">Please provide a valid city.</div>
               </div>
             </div>
             <h1 class="text-center">Expenses</h1>
@@ -53,7 +53,7 @@
               >
               <div class="col-sm-10">
                 <input type="text" class="form-control" id="inputFood" />
-                <div class="invalid-feedbac">Please provide a valid city.</div>
+                <div class="feedback">Please provide a valid city.</div>
               </div>
             </div>
             <div class="mb-3 row">
@@ -62,7 +62,7 @@
               >
               <div class="col-sm-10">
                 <input type="text" class="form-control" id="inputRent" />
-                <div class="invalid-feedbac">Please provide a valid city.</div>
+                <div class="feedback">Please provide a valid city.</div>
               </div>
             </div>
             <div class="mb-3 row">
@@ -71,38 +71,38 @@
               >
               <div class="col-sm-10">
                 <input type="text" class="form-control" id="inputClothes" />
-                <div class="invalid-feedbac">Please provide a valid city.</div>
+                <div class="feedback">Please provide a valid city.</div>
               </div>
             </div>
             <div class="d-grid gap-2 col-6 mx-auto">
-              <button class="btn btn-primary btn-lg">Calculate</button>
+              <button class="btn btn-primary btn-lg" id="calculateBtn">Calculate</button>
             </div>
             <div class="mt-4 text-center">
-              <h2 class="disply">Total Expenses: <span>5500</span></h2>
-              <h2 class="disply">Balance: <span>5500</span></h2>
+              <h2 class="disply">Total Expenses: <span id="expensesBalance"></span></h2>
+              <h2 class="disply">Balance: <span id="totalBalance"></span></h2>
             </div>
 
             <div class="save mt-5">
               <div class="mb-3 d-flex">
                 <div class="row">
-                  <label for="inputClothes" class="col-sm-2 col-form-label fs-5"
+                  <label for="inputSave" class="col-sm-2 col-form-label fs-5"
                     >Save: </label
                   >
                   <div class="col-10">
-                    <input type="text" class="form-control" id="inputClothes" />
+                    <input type="text" class="form-control" id="inputSave" />
                   </div>
                 </div>
-                <h5 class="mx-4">%</h5>
-                <div class="ml-3">
-                  <button class="btn btn-primary btn-lg">Save</button>
+                <h5 class="mx-4 savestyle">%</h5>
+                <div class="ml-3 savestyle">
+                  <button class="btn btn-primary btn-lg" id="saveBtn">Save</button>
                 </div>
               </div>
-              <div class="invalid-feedbac">
+              <div class="feedback">
                 Please provide a valid city.
               </div>
 
               <div class="  text-center">
-                <h2 class="saveDisply">Save Amount: <span>5500</span></h2>
+                <h2 class="saveDisply" >Save Amount: <span id="saveBalance"></span></h2>
                 <h2 class="saveDisply">Remaining Balance: <span>5500</span></h2>
               </div>
             </div>
