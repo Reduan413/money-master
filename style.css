@@ -39,6 +39,10 @@
 .feedback{
     display: none;
 }
+.active{
+    display: block;
+    color: red;
+}
 
 /*Media Queries*/
 /*Mobile Device*/
